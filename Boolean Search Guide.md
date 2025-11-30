@@ -1,4 +1,4 @@
-###AllAtOnce Boolean Search Documentation
+### AllAtOnce Boolean Search Documentation
 
 **Search Operators Reference**
 
