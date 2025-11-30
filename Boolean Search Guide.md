@@ -2,7 +2,7 @@
 
 **Search Operators Reference**
 
-**1\. Basic Boolean Operators**
+### 1\. Basic Boolean Operators
 
 Standard Boolean logic for combining search terms:
 
@@ -20,7 +20,7 @@ Standard Boolean logic for combining search terms:
 
 This finds posts mentioning killing/hanging politicians, excluding mentions of satire/parody.
 
-**2\. Wildcard Search**
+### 2\. Wildcard Search
 
 **Multi-Character Wildcard (\*)**
 
@@ -48,7 +48,7 @@ thre?t → matches: threat, threot (typo)
 
 \------
 
-**3\. Proximity Search**
+### 3\. Proximity Search
 
 **Find Terms Within Distance**
 
@@ -78,7 +78,7 @@ Match phrases where words appear within N words of each other (in any order).
 
 **Use case:** Find related concepts that appear near each other but not necessarily in exact phrase form. Especially useful for detecting threatening rhetoric where exact phrasing varies.
 
-**4\. Fuzzy Search**
+### 4\. Fuzzy Search
 
 **Match Similar Terms (Typos/Variations)**
 
@@ -106,33 +106,9 @@ threaten~ → same as threaten~2. matches: threaten, threatn, threating, threate
 
 ⚠️ **Warning:** Higher fuzziness values (3 or more) will likely lead to an error.
 
-**5\. Boosting (Relevance Scoring)**
+# Best Practices
 
-**Increase Term Importance**
-
-Make certain terms more important in ranking results.
-
-**Syntax:** term^N (where N is the boost multiplier)
-
-**Examples:**
-
-kill^3 OR hang^2 → prioritize "kill" 3x, "hang" 2x
-
-(shoot^5 OR threat^3) AND trump
-
-violent^2 AND politician
-
-**How it works:**
-
-Results containing "kill" will rank higher than those with "hang"
-
-Doesn't filter results, just affects ordering
-
-**Use case:** When you want certain keywords to appear at the top of results, like prioritizing explicit threats over implicit ones.
-
-**Best Practices**
-
-**DO ✅**
+### DO ✅
 
 **Test queries incrementally**
 
@@ -160,7 +136,7 @@ Makes queries readable and ensures correct logic
 
 Mix exact phrases, wildcards, and Boolean logic
 
-**DON'T ❌**
+### DON'T ❌
 
 **Don't use excessive wildcards**
 
@@ -190,4 +166,5 @@ Mix exact phrases, wildcards, and Boolean logic
 
 Always add exclusions for entertainment/news/satire
 
-**Last updated:** November 25, 2025
+# Last updated:
+November 25, 2025
