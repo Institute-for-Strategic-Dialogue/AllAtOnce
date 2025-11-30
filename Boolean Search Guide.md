@@ -112,9 +112,9 @@ threaten~ → same as threaten~2. matches: threaten, threatn, threating, threate
 
 **Test queries incrementally**
 
-Start broad, add filters gradually
+* Start broad, add filters gradually
 
-Check result counts at each step
+* Check result counts at each step
 
 **Use wildcards for word variations**
 
