@@ -106,5 +106,4 @@ threaten~ → same as threaten~2. matches: threaten, threatn, threating, threate
 
 ⚠️ **Warning:** Higher fuzziness values (3 or more) will likely lead to an error.
 
-# Last updated:
-November 25, 2025
+**Last updated:** November 25, 2025
